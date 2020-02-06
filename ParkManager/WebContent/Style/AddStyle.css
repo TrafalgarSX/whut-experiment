@@ -1,0 +1,8 @@
+@CHARSET "UTF-8";
+*{margin:0;padding:0;font-size:16px;font-family:微软雅黑;}
+td{padding:2px 3px;}
+input[type=text],input[type=password],input[type=date],input[type=number]{ width:210px; height: 24px;}
+input[type=button],input[type=reset],input[type=submit]{ width:75px; height: 24px; line-height: 22px; margin-top:10px;}
+select{ width:214px; height: 26px;}
+
+input[readonly]{ background: #EBEBE4; border:1px solid #A9A9A9; }

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>ParkManager</display-name>
+  <welcome-file-list>
+    <welcome-file>/login.jsp</welcome-file>
+  </welcome-file-list>
+  
+  <error-page>
+  <error-code>404</error-code>
+  <location>/view/404.jsp</location>
+  </error-page>
+  
+   <error-page>
+  <error-code>500</error-code>
+  <location>/view/500.jsp</location>
+  </error-page>
+  
+    <servlet>
+  	<description>登录验证</description>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<servlet-class>servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>LoginServlet</servlet-name>
+  	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+
+  
+      <servlet>
+  	<description>固定车主IC卡信息管理</description>
+  	<servlet-name>FixedCardServlet</servlet-name>
+  	<servlet-class>servlet.FixedCardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FixedCardServlet</servlet-name>
+  	<url-pattern>/FixedCardServlet</url-pattern>
+  </servlet-mapping>
+ 
+    <servlet>
+  	<description>临时车主IC卡信息管理</description>
+  	<servlet-name>TempCardServlet</servlet-name>
+  	<servlet-class>servlet.TempCardServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TempCardServlet</servlet-name>
+  	<url-pattern>/TempCardServlet</url-pattern>
+  </servlet-mapping>
+   
+  
+  
+  <servlet>
+  	<description>车位信息管理</description>
+  	<servlet-name>SeatServlet</servlet-name>
+  	<servlet-class>servlet.SeatServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>SeatServlet</servlet-name>
+  	<url-pattern>/SeatServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<description>固定车主停车信息管理</description>
+  	<servlet-name>FixedServlet</servlet-name>
+  	<servlet-class>servlet.FixedServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>FixedServlet</servlet-name>
+  	<url-pattern>/FixedServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+  	<description>临时车主停车信息管理</description>
+  	<servlet-name>TempServlet</servlet-name>
+  	<servlet-class>servlet.TempServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>TempServlet</servlet-name>
+  	<url-pattern>/TempServlet</url-pattern>
+  </servlet-mapping>
+     <servlet>
+  	<description>管理员信息管理</description>
+  	<servlet-name>RoleServlet</servlet-name>
+  	<servlet-class>servlet.RoleServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>RoleServlet</servlet-name>
+  	<url-pattern>/RoleServlet</url-pattern>
+  </servlet-mapping>
+</web-app>

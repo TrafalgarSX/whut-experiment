@@ -1,0 +1,21 @@
+@CHARSET "UTF-8";
+*{margin:0; paddding:0;font-size:14px; font-family:微软雅黑;}
+a{text-decoration:none; color:#333;}
+a:hover{ color:#999;}
+.div_container table{width:97%; border-collapse:collapse; border:1px solid #999; margin:5px;}
+.div_container table th,.div_container table td{ padding:2px 3px; border:1px solid #999;}
+.div_container table th{ font-size:12px; color:#666;}
+.a_edit{margin-right:10px;}
+
+.searchDiv{ text-indent:10px; padding:10px 0 5px 0;}
+.searchDiv select{ margin-right:15px;}
+
+.div_container table th{ font-size:14px; background:#477A8D; color:#fff;}
+table tbody tr:nth-child(2n){ background:#8EB3A4;}
+table thead th{ color:#fff;background:#1f6729;}
+
+table tfoot div{ float:right; margin-right:10px;}
+table tfoot  input[type=text]{ width:30px; height:14px;margin:0 6px;}
+table tfoot  input[type=button]{width:30px; height:20px; line-height:20px; font-size:12px;}
+table tfoot select{width:55px; margin-right:5px;}
+table tfoot strong{padding:0 5px; font-style:normal;}

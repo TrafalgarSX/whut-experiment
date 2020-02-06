@@ -1,0 +1,61 @@
+*{ margin:0; padding:0; font-size:13px; font-family:微软雅黑;}
+body{
+	width:100%;
+	height:100%;
+	background-image:url(../Images/background.jpg);
+	background-repeat: no-repeat;
+	background-position:top center;
+	background-size:cover;
+	background-attachment:fixed;
+	}
+.wrapLogin{
+	background:rgba(0,0,0,0.5);
+	width:487px; 
+	height:342px; 
+	position:absolute; 
+	left:50%; 
+	top:50%; 
+	margin-left:-243px; 
+	margin-top:-171px;
+	border-radius:20px;
+	}
+.loginPanel{ 
+	padding:140px 0 0 140px;
+	position:absolute;
+	}
+.loginPanel h2{
+	width:400px; 
+	position:absolute;
+	top:60px;
+	font-size:24px;
+    color:#fff; 
+	text-indent:0px;
+	margin-left:-10px;
+	}
+.loginPanel p{ margin-bottom:15px; font-weight:bold;}
+.btn{
+	margin-top:30px;
+	margin-left:20px;
+}
+.loginPanel p label{
+	color:#fff;
+}
+.loginPanel input[type=text],.loginPanel input[type=password]{ width:150px; height:20px;}
+.btnLogin{ 
+	width:67px; 
+	height:27px; 
+	border:1px solid #999; 
+	margin-left:20px;
+	border-radius:5px;
+	background:lightblue;
+	color:#fff;
+	}
+.btnCancel{ 
+	width:67px; 
+	height:27px; 
+	border:1px solid #999;  
+	margin-left:20px;
+	border-radius:5px;
+	background:lightblue;
+	color:#fff;
+	}
