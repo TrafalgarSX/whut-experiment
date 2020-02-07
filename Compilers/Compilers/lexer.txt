@@ -1,0 +1,2 @@
+while(a<=b)
+   nice=a++/3-2*d

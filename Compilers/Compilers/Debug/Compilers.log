@@ -1,0 +1,5 @@
+﻿  parser2.cpp
+d:\c++源代码\compilers\compilers\lexer.h(218): warning C4244: “初始化”: 从“int”转换到“float”，可能丢失数据
+d:\c++源代码\compilers\compilers\parser2.h(17): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\compilers\compilers\lexer.h(114): warning C4715: “lexer::Baundarys”: 不是所有的控件路径都返回值
+  Compilers.vcxproj -> D:\c++源代码\Compilers\Debug\Compilers.exe

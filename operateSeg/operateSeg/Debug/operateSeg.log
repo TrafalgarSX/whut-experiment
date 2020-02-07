@@ -1,0 +1,16 @@
+﻿  Main.cpp
+d:\c++源代码\operateseg\operateseg\main.cpp(26): warning C4473: “scanf_s”: 没有为格式字符串传递足够的参数
+  d:\c++源代码\operateseg\operateseg\main.cpp(26): note: 占位符和其参数预计 2 可变参数，但提供的却是 1 参数
+  d:\c++源代码\operateseg\operateseg\main.cpp(26): note: 缺失的可变参数 2 为格式字符串“%s”所需
+  d:\c++源代码\operateseg\operateseg\main.cpp(26): note: 此参数用作缓冲区大小
+  Partition.cpp
+d:\c++源代码\operateseg\operateseg\partition.cpp(174): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\operateseg\operateseg\partition.cpp(220): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\operateseg\operateseg\partition.cpp(284): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\operateseg\operateseg\partition.cpp(331): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\operateseg\operateseg\partition.cpp(473): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\operateseg\operateseg\partition.cpp(556): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\operateseg\operateseg\partition.cpp(638): warning C4018: “<”: 有符号/无符号不匹配
+d:\c++源代码\operateseg\operateseg\partition.cpp(711): warning C4018: “<”: 有符号/无符号不匹配
+  正在生成代码...
+  operateSeg.vcxproj -> D:\c++源代码\operateSeg\Debug\operateSeg.exe
