@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: UI.MainForm
+Class-Path: lib/jfreechart-1.5.0.jar lib/jcommon-1.0.24.jar
+

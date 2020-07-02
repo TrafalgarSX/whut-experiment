@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="0" failures="0" name="BorderLayoutTest" time="0" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\javaeclipse\JDK\jre\bin"/>
+    <property name="java.vm.version" value="25.192-b12"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\javawork\FileManager"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\javawork\FileManager"/>
+    <property name="java.runtime.version" value="1.8.0_192-b12"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\javaeclipse\JDK\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\guo\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="maven.ext.class.path" value="D:\IDEA\plugins\maven\lib\maven-event-listener.jar"/>
+    <property name="classworlds.conf" value="D:\apache-maven-3.6.2\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="C:\javaeclipse\JDK\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\XShell\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\System32\OpenSSH\;C:\Mingw-w64\x86_64-8.1.0-release-win32-seh-rt_v6-rev0 (1)\mingw64\bin;D:\apache-maven-3.6.2\bin;D:\apache-jmeter-5.1.1\bin;D:\Cmake\bin;D:\Redis\;C:\ProgramData\chocolatey\bin;D:\python\Scripts\;D:\python\;C:\Users\guo\AppData\Local\Microsoft\WindowsApps;D:\python\PyCharm Community Edition 2018.3.5\bin;C:\Users\guo\AppData\Local\GitHubDesktop\bin;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Users\guo\AppData\Local\Microsoft\WindowsApps;D:\VScode\Microsoft VS Code\bin;C:\javaeclipse\JDK\bin;D:\MySql\bin;C:\javaeclipse\JDK\jre\bin;D:\git\Git\cmd;D:\apache-tomcat-9.0.26\bin;D:\node-v10.16.3-win-x64;D:\node-v10.16.3-win-x64\node-global;D:\PyCharm\bin;D:\IDEA\bin;D:\node-v10.16.3-win-x64\node-global\node_modules;D:\GitHubDesktop\bin;;."/>
+    <property name="maven.conf" value="D:\apache-maven-3.6.2/conf"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="D:\maven_repository"/>
+    <property name="idea.version2019.3.5" value="true"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\guo"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="guo"/>
+    <property name="java.class.path" value="D:\apache-maven-3.6.2\boot\plexus-classworlds-2.6.0.jar;D:\IDEA\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\javaeclipse\JDK\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2019.3.5 -s D:\apache-maven-3.6.2\conf\settings.xml -Dmaven.repo.local=D:\maven_repository install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_192"/>
+    <property name="java.ext.dirs" value="C:\javaeclipse\JDK\jre\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\javaeclipse\JDK\jre\lib\resources.jar;C:\javaeclipse\JDK\jre\lib\rt.jar;C:\javaeclipse\JDK\jre\lib\sunrsasign.jar;C:\javaeclipse\JDK\jre\lib\jsse.jar;C:\javaeclipse\JDK\jre\lib\jce.jar;C:\javaeclipse\JDK\jre\lib\charsets.jar;C:\javaeclipse\JDK\jre\lib\jfr.jar;C:\javaeclipse\JDK\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\apache-maven-3.6.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+</testsuite>

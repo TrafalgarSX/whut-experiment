@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/main/java/File/DriveChart.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/File/FileCreate.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/File/FileDelete.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/File/FileSearch.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/File/FileSort.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/File/GetFileNames.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/UI/FileProperties.java" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/src/main/java/UI/MainForm.java" charset="GBK" />
+  </component>
+</project>

@@ -1,0 +1,178 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"font": &Font0 new java.awt.Font( "微软雅黑", 1, 14 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "HeadPanel"
+				"border": new javax.swing.border.TitledBorder( null, "文件名称", 4, 0, new java.awt.Font( "微软雅黑", 1, 14 ), null )
+				"font": #Font0
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "NameField"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 80
+					"y": 25
+					"width": 205
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ImageLabel"
+					"text": "text"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 35
+					"y": 30
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 15
+				"y": 10
+				"height": 85
+				"width": 325
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "BotPanel"
+				"border": new javax.swing.border.TitledBorder( null, "相关时间", 4, 0, new java.awt.Font( "微软雅黑", 1, 14 ), null )
+				"font": #Font0
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "CreateTimeLabel"
+					"text": "创建时间："
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 30
+					"y": 35
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "CreateTime"
+					"text": "text"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 165
+					"height": 17
+					"x": 105
+					"y": 35
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ModifyTimeLabel"
+					"text": "修改时间："
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 17
+					"x": 30
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "ModifyTime"
+					"text": "text"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 165
+					"height": 15
+					"x": 105
+					"y": 65
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "AccessTimeLabel"
+					"text": "访问时间："
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 70
+					"height": 17
+					"x": 30
+					"y": 90
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "AccessTime"
+					"text": "text"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"width": 165
+					"height": 17
+					"x": 105
+					"y": 90
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 320
+				"height": 165
+				"x": 15
+				"y": 300
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "MidPanel"
+				"border": new javax.swing.border.TitledBorder( null, "参数", 4, 0, new java.awt.Font( "微软雅黑", 1, 14 ), sfield java.awt.Color black )
+				"font": #Font0
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "LocationLabel"
+					"text": "位置"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 30
+					"y": 60
+					"height": 30
+					"width": 30
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "SizeLabel"
+					"text": "大小"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 30
+					"y": 25
+					"width": 30
+					"height": 27
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "Size"
+					"text": "0KB"
+					"font": #Font0
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 75
+					"y": 25
+					"width": 160
+					"height": 27
+				} )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollPane1"
+					add( new FormComponent( "javax.swing.JTextArea" ) {
+						name: "locationArea"
+						"text": "C:\\\\Windows\\\\System32\\\\"
+						"font": new java.awt.Font( "微软雅黑", 1, 14 )
+						"editable": false
+					} )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 75
+					"y": 65
+					"width": 230
+					"height": 75
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 320
+				"height": 165
+				"x": 15
+				"y": 110
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "EnsureButton"
+				"text": "确定"
+				"font": #Font0
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "EnsureButtonActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 250
+				"y": 485
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 10, 0 )
+			"size": new java.awt.Dimension( 370, 570 )
+		} )
+		add( new FormComponent( "javax.swing.JTextField" ) {
+			name: "Location"
+			"font": new java.awt.Font( "微软雅黑", 1, 14 )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 390, 200 )
+			"size": new java.awt.Dimension( 235, 30 )
+		} )
+	}
+}

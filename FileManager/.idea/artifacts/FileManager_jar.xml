@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact build-on-make="true" name="FileManager:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/FileManager_jar</output-path>
+    <root id="root">
+      <element id="archive" name="FileManager.jar">
+        <element id="module-output" name="FileManager" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jfree/jcommon/1.0.24/jcommon-1.0.24.jar" />
+        <element id="file-copy" path="$MAVEN_REPOSITORY$/org/jfree/jfreechart/1.5.0/jfreechart-1.5.0.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

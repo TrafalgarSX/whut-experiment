@@ -1,0 +1,396 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "this"
+			"title": "文件资源管理器"
+			"maximizedBounds": new java.awt.Rectangle( 0, 0, 36500, 36500 )
+			"font": new java.awt.Font( "微软雅黑", 1, 18 )
+			"iconImage": new com.jformdesigner.model.SwingIcon( 0, "/mac.jpg" )
+			auxiliary() {
+				"JavaCodeGenerator.preInitCode": "Dimension d=Toolkit.getDefaultToolkit().getScreenSize();//得到显示屏的大小\nint x= (int) d.getWidth();\nint y= (int) d.getHeight();\nsetPreferredSize(new Dimension((x*3)/4,(y*3)/4));"
+			}
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "NorthPanel"
+				"preferredSize": new java.awt.Dimension( 1200, 80 )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "searchPanel"
+					"preferredSize": new java.awt.Dimension( 1200, 40 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 5
+					} ) {
+						name: "ButtonPanel"
+						"preferredSize": new java.awt.Dimension( 400, 19 )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "AllFiles"
+							"text": "所有文件"
+							"$buttonGroup": new FormReference( "Classify" )
+							"selected": true
+							"preferredSize": new java.awt.Dimension( 100, 19 )
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AllFilesActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "Picture"
+							"text": "图片"
+							"$buttonGroup": new FormReference( "Classify" )
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "PictureActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "Video"
+							"text": "视频"
+							"$buttonGroup": new FormReference( "Classify" )
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "VideoActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "Music"
+							"text": "音乐"
+							"$buttonGroup": new FormReference( "Classify" )
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "MusicActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JRadioButton" ) {
+							name: "Text"
+							"text": "文档"
+							"$buttonGroup": new FormReference( "Classify" )
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "TextActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "West"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "sortPanel"
+						"preferredSize": new java.awt.Dimension( 260, 30 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "SortTxt"
+							"text": "     排序"
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "West"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "SortList"
+							"selectedIndex": 2
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+							auxiliary() {
+								"JavaCodeGenerator.preCreateCode": " String Sort_Items[] = {\"文件大小\",\"创建时间\",\"首字母\"};\n"
+								"JavaCodeGenerator.customCreateCode": "new JComboBox(Sort_Items);"
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SortListActionPerformed", true ) )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+						add( new FormComponent( "javax.swing.JComboBox" ) {
+							name: "SortType"
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+							auxiliary() {
+								"JavaCodeGenerator.preCreateCode": "String Sort_Type_Items[] = {\"升序\",\"降序\"};"
+								"JavaCodeGenerator.customCreateCode": "new JComboBox(Sort_Type_Items);"
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SortTypeActionPerformed", true ) )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "East"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "East"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "searchTxtPanel"
+						"preferredSize": new java.awt.Dimension( 290, 30 )
+						add( new FormComponent( "javax.swing.JLabel" ) {
+							name: "SearchTxt"
+							"text": "  搜索"
+							"font": new java.awt.Font( "幼圆", 1, 14 )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "West"
+						} )
+						add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+							"columns": 3
+						} ) {
+							name: "panel10"
+							add( new FormComponent( "javax.swing.JLabel" ) {
+								name: "SearchType"
+								"text": "  搜索类型"
+								"font": new java.awt.Font( "幼圆", 1, 14 )
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "DirCheck"
+								"text": "目录"
+								"selected": true
+								"font": new java.awt.Font( "幼圆", 1, 14 )
+							} )
+							add( new FormComponent( "javax.swing.JCheckBox" ) {
+								name: "FileCheck"
+								"text": "文件"
+								"selected": true
+								"font": new java.awt.Font( "幼圆", 1, 14 )
+							} )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "East"
+						} )
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "SearchText"
+							"font": new java.awt.Font( "微软雅黑", 1, 14 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SearchTextActionPerformed", true ) )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "First"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+					name: "goPanel"
+					"preferredSize": new java.awt.Dimension( 1200, 50 )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 2
+					} ) {
+						name: "historyPanel"
+						"preferredSize": new java.awt.Dimension( 200, 30 )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "PreBtn"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/back.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "PreBtnActionPerformed", true ) )
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "LatBtn"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/forward.jpg" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "LatBtnActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "West"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 1
+					} ) {
+						name: "goButtonPanel"
+						"preferredSize": new java.awt.Dimension( 130, 30 )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "GoBtn"
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/go.png" )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "GoBtnActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "East"
+					} )
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+						"columns": 1
+					} ) {
+						name: "goTxtPanel"
+						add( new FormComponent( "javax.swing.JTextField" ) {
+							name: "GuideText"
+							"font": new java.awt.Font( "微软雅黑", 1, 16 )
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "GuideTextActionPerformed", true ) )
+						} )
+					}, new FormLayoutConstraints( class java.lang.String ) {
+						"value": "Center"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "TreePane"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"foreground": new java.awt.Color( 0, 0, 51, 255 )
+				"preferredSize": new java.awt.Dimension( 200, 14 )
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollTree"
+					auxiliary() {
+						"JavaCodeGenerator.preCreateCode": "filesTree = new FilesTree();"
+						"JavaCodeGenerator.customCreateCode": "new JScrollPane(filesTree);"
+					}
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "West"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "ShowPane"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				"background": new java.awt.Color( 255, 255, 255, 255 )
+				"foreground": sfield java.awt.Color black
+				"preferredSize": new java.awt.Dimension( 250, 66 )
+				auxiliary() {
+					"JavaCodeGenerator.preInitCode": "stack = new Stack<String>();         \nstack_return = new Stack<String>();"
+				}
+				add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+					name: "scrollShow"
+					"maximumSize": new java.awt.Dimension( 10, 10 )
+					auxiliary() {
+						"JavaCodeGenerator.preInitCode": "list.add(popupMenu1);\nlist.add(popupMenu2);\nlist.add(popupMenu3);\nlist.add(popupMenu4);\nHome_List();"
+					}
+					add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+						name: "listPanel"
+						add( new FormComponent( "javax.swing.JList" ) {
+							name: "list"
+							"preferredSize": sfield com.jformdesigner.model.FormObject NULL_VALUE
+							"visibleRowCount": 10
+							"maximumSize": new java.awt.Dimension( 10, 10 )
+							"font": new java.awt.Font( "微软雅黑", 1, 16 )
+							auxiliary() {
+								"JavaCodeGenerator.customCreateCode": "new JList<String>(){\n@Override\n     public int locationToIndex(Point location) {\n        int index = super.locationToIndex(location);\n        if (index != -1 && !getCellBounds(index, index).contains(location)) {\n                return -1;\n             }\n        else {\n                return index;\n             }\n     }\t\n};"
+								"JavaCodeGenerator.typeParameters": "String"
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "listMouseClicked", true ) )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "Center"
+						} )
+						add( new FormComponent( "javax.swing.JButton" ) {
+							name: "clearSelect"
+							"text": "clear"
+							"preferredSize": new java.awt.Dimension( 180, 30 )
+							"icon": new com.jformdesigner.model.SwingIcon( 0, "/lhasaTiger.jpg" )
+							auxiliary() {
+								"JavaCodeGenerator.variableModifiers": 1
+							}
+							addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "clearSelectActionPerformed", true ) )
+						}, new FormLayoutConstraints( class java.lang.String ) {
+							"value": "East"
+						} )
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 95, 0 )
+			"size": new java.awt.Dimension( 1000, 655 )
+		} )
+		add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+			name: "popupMenu1"
+			"font": &Font0 new java.awt.Font( "微软雅黑", 1, 16 )
+			"preferredSize": new java.awt.Dimension( 100, 117 )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "openItem"
+				"text": "    打开"
+				"font": #Font0
+				"preferredSize": new java.awt.Dimension( 100, 117 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "openItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "deleteItem"
+				"text": "    删除"
+				"font": #Font0
+				"preferredSize": new java.awt.Dimension( 100, 117 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "renameItem"
+				"text": "   重命名"
+				"font": #Font0
+				"preferredSize": new java.awt.Dimension( 100, 117 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "renameItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "propertiesItem"
+				"text": "    属性"
+				"font": #Font0
+				"preferredSize": new java.awt.Dimension( 100, 117 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "propertiesItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "copyItem"
+				"text": "    复制"
+				"font": #Font0
+				"preferredSize": new java.awt.Dimension( 100, 117 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "copyItemActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 290, 665 )
+			"size": new java.awt.Dimension( 115, 170 )
+		} )
+		add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+			name: "popupMenu2"
+			"font": &Font1 new java.awt.Font( "微软雅黑", 1, 16 )
+			"preferredSize": new java.awt.Dimension( 80, 80 )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "diskOpenItem"
+				"text": "   打开"
+				"font": #Font1
+				"preferredSize": new java.awt.Dimension( 80, 80 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "diskOpenItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "DiskPropertiesItem"
+				"text": "   属性"
+				"font": #Font1
+				"preferredSize": new java.awt.Dimension( 80, 80 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "DiskPropertiesItemActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 805, 705 )
+			"size": new java.awt.Dimension( 115, 105 )
+		} )
+		add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+			name: "popupMenu3"
+			"font": &Font2 new java.awt.Font( "微软雅黑", 1, 16 )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "multiCopyItem"
+				"text": "复制"
+				"font": #Font2
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "multiCopyItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "delete"
+				"text": "删除"
+				"font": #Font2
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "deleteActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 635, 705 )
+			"size": new java.awt.Dimension( 135, 110 )
+		} )
+		add( new FormContainer( "javax.swing.JPopupMenu", new FormLayoutManager( class javax.swing.JPopupMenu ) ) {
+			name: "popupMenu4"
+			"font": &Font3 new java.awt.Font( "微软雅黑", 1, 16 )
+			"preferredSize": new java.awt.Dimension( 120, 100 )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "pasteItem"
+				"text": "      粘贴"
+				"enabled": false
+				"font": #Font3
+				"preferredSize": new java.awt.Dimension( 120, 100 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "pasteItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "createDirItem"
+				"text": "   创建目录"
+				"font": #Font3
+				"preferredSize": new java.awt.Dimension( 120, 100 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "createDirItemActionPerformed", true ) )
+			} )
+			add( new FormComponent( "javax.swing.JMenuItem" ) {
+				name: "createTxtItem"
+				"text": "创建文本文件"
+				"font": #Font3
+				"preferredSize": new java.awt.Dimension( 120, 100 )
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "createTxtItemActionPerformed", true ) )
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 470, 685 )
+			"size": new java.awt.Dimension( 110, 115 )
+		} )
+		add( new FormNonVisual( "javax.swing.ButtonGroup" ) {
+			name: "Classify"
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 170, 725 )
+		} )
+	}
+}

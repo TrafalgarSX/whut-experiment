@@ -1,0 +1,161 @@
+JFDML JFormDesigner: "6.0.6.2.195" Java: "11.0.6" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormWindow( "javax.swing.JFrame", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+			name: "frame1"
+			"visible": true
+			"$sizePolicy": 1
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridBagLayout ) {
+				"$columnSpecs": "0, 0, 0, 0, 66, 0, 133, 0, 0, 0, 0, 83, 0, 71, 80"
+				"$rowSpecs": "0"
+				"$hGap": 5
+				"$vGap": 5
+				"$alignTop": true
+				"$alignLeft": true
+			} ) {
+				name: "searchPanel"
+				"preferredSize": new java.awt.Dimension( 1200, 30 )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "AllFiles"
+					"text": "所有文件"
+					"$buttonGroup": new FormReference( "Classify" )
+					"selected": true
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "AllFilesActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "Picture"
+					"text": "图片"
+					"$buttonGroup": new FormReference( "Classify" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "PictureActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 1
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "Video"
+					"text": "视频"
+					"$buttonGroup": new FormReference( "Classify" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "VideoActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 2
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "Music"
+					"text": "音乐"
+					"$buttonGroup": new FormReference( "Classify" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "MusicActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 3
+				} )
+				add( new FormComponent( "javax.swing.JRadioButton" ) {
+					name: "Text"
+					"text": "文档"
+					"$buttonGroup": new FormReference( "Classify" )
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "TextActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 4
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "SortTxt"
+					"text": "     排序"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 5
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "SortList"
+					"selectedIndex": 2
+					auxiliary() {
+						"JavaCodeGenerator.preCreateCode": " String Sort_Items[] = {\"文件大小\",\"创建时间\",\"首字母\"};\n"
+						"JavaCodeGenerator.customCreateCode": "new JComboBox(Sort_Items);"
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SortListActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 6
+				} )
+				add( new FormComponent( "javax.swing.JComboBox" ) {
+					name: "SortType"
+					auxiliary() {
+						"JavaCodeGenerator.preCreateCode": "String Sort_Type_Items[] = {\"升序\",\"降序\"};"
+						"JavaCodeGenerator.customCreateCode": "new JComboBox(Sort_Type_Items);"
+						"JavaCodeGenerator.variableModifiers": 1
+					}
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SortTypeActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 7
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "SearchTxt"
+					"text": "  搜索"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 8
+				} )
+				add( new FormComponent( "javax.swing.JTextField" ) {
+					name: "SearchText"
+					addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "SearchTextActionPerformed", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 9
+					"gridwidth": 3
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "SearchType"
+					"text": "  搜索类型"
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 12
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "DirCheck"
+					"text": "目录"
+					"selected": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 13
+				} )
+				add( new FormComponent( "javax.swing.JCheckBox" ) {
+					name: "FileCheck"
+					"text": "文件"
+					"selected": true
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.GridBagConstraintsEx ) {
+					"gridx": 14
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "North"
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.BorderLayout ) ) {
+				name: "panel14"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "text"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "West"
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "text"
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "East"
+				} )
+				add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+					"columns": 2
+				} ) {
+					name: "panel15"
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button7"
+						"text": "text"
+					} )
+					add( new FormComponent( "javax.swing.JButton" ) {
+						name: "button6"
+						"text": "text"
+					} )
+				}, new FormLayoutConstraints( class java.lang.String ) {
+					"value": "Center"
+				} )
+			}, new FormLayoutConstraints( class java.lang.String ) {
+				"value": "Center"
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 100, 10 )
+			"size": new java.awt.Dimension( 1010, 640 )
+		} )
+	}
+}
